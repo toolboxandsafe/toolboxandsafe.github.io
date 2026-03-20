@@ -536,6 +536,104 @@ body {
     font-size: 0.95rem;
 }
 
+/* Gallery Section */
+.gallery {
+    padding: 5rem 0;
+    background: #f7fafc;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.gallery-placeholder {
+    height: 200px;
+    background: linear-gradient(135deg, #2d3748 0%, #1a365d 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.placeholder-icon {
+    font-size: 3.5rem;
+}
+
+.placeholder-label {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* For real images - replace .gallery-placeholder with .gallery-image */
+.gallery-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 1.25rem;
+}
+
+.gallery-caption h4 {
+    color: #1a365d;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.gallery-caption p {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.gallery-cta {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e0;
+}
+
+.gallery-cta p {
+    color: #4a5568;
+    margin: 0;
+    font-size: 1rem;
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 5rem 0;
@@ -802,6 +900,31 @@ body {
         padding: 1.25rem;
     }
     
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .gallery-placeholder {
+        height: 150px;
+    }
+    
+    .placeholder-icon {
+        font-size: 2.5rem;
+    }
+    
+    .placeholder-label {
+        font-size: 0.8rem;
+    }
+    
+    .gallery-caption {
+        padding: 1rem;
+    }
+    
+    .gallery-caption h4 {
+        font-size: 1rem;
+    }
+    
     .testimonials-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -856,5 +979,17 @@ body {
     .btn-large {
         padding: 1rem 2rem;
         font-size: 1.1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-placeholder {
+        height: 180px;
+    }
+    
+    .placeholder-icon {
+        font-size: 3rem;
     }
 }
