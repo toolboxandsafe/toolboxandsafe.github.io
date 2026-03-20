@@ -26,7 +26,7 @@
                 <h2 class="hero-title">Your Toolbox & Gun Safe Moving Specialists</h2>
                 <p class="hero-subtitle">Professional, insured, and experienced in handling Arizona's most valuable equipment</p>
                 <div class="hero-buttons">
-                    <a href="tel:+14803072506" class="btn btn-primary">Get Free Quote</a>
+                    <a href="#quote" class="btn btn-primary">Get Free Quote</a>
                     <a href="#pricing" class="btn btn-secondary">View Pricing</a>
                 </div>
             </div>
@@ -229,10 +229,91 @@
             </div>
         </section>
 
+        <section class="quote-form" id="quote">
+            <div class="container">
+                <h2 class="section-title">Request a Free Quote</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you within a few hours</p>
+                <form action="https://formspree.io/f/xwpkqpvj" method="POST" class="quote-form-container">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(480) 555-1234">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="you@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="item_type">Type of Item *</label>
+                            <select id="item_type" name="item_type" required>
+                                <option value="">Select item type...</option>
+                                <option value="toolbox_small">Toolbox (under 300 lbs)</option>
+                                <option value="toolbox_large">Toolbox (300+ lbs)</option>
+                                <option value="safe_small">Gun Safe (under 500 lbs)</option>
+                                <option value="safe_medium">Gun Safe (500-1000 lbs)</option>
+                                <option value="safe_large">Gun Safe (1000+ lbs)</option>
+                                <option value="other">Other Heavy Item</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="weight">Approximate Weight (if known)</label>
+                            <input type="text" id="weight" name="weight" placeholder="e.g., 800 lbs or 'not sure'">
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred_date">Preferred Move Date</label>
+                            <input type="date" id="preferred_date" name="preferred_date">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="pickup_location">Pickup Location *</label>
+                        <input type="text" id="pickup_location" name="pickup_location" required placeholder="Street address, city, ZIP">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="delivery_location">Delivery Location *</label>
+                        <input type="text" id="delivery_location" name="delivery_location" required placeholder="Street address, city, ZIP">
+                    </div>
+                    <div class="form-row checkboxes">
+                        <div class="form-group checkbox-group">
+                            <label>Stairs Involved?</label>
+                            <div class="checkbox-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="stairs_pickup" value="yes">
+                                    At pickup location
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="stairs_delivery" value="yes">
+                                    At delivery location
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="floors">How Many Flights? (if stairs)</label>
+                            <input type="text" id="floors" name="floors" placeholder="e.g., 2 flights up">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="additional_info">Additional Information</label>
+                        <textarea id="additional_info" name="additional_info" rows="4" placeholder="Any special requirements, narrow doorways, tight turns, bolt-down needed, etc."></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Quote Request from toolboxandsafe.com">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Quote Request</button>
+                    <p class="form-note">We typically respond within 2-4 hours during business hours</p>
+                </form>
+            </div>
+        </section>
+
         <section class="cta-section">
             <div class="container">
-                <h2>Ready to Move Your Valuable Equipment?</h2>
-                <p>Get a free quote for professional toolbox or gun safe moving in Arizona</p>
+                <h2>Prefer to Talk Now?</h2>
+                <p>Call us directly for immediate assistance with your toolbox or gun safe move</p>
                 <a href="tel:+14803072506" class="btn btn-primary btn-large">Call (480) 307-2506 Now</a>
             </div>
         </section>
