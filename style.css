@@ -993,3 +993,134 @@ body {
         font-size: 3rem;
     }
 }
+
+/* ============================================
+   JAVASCRIPT ENHANCEMENT STYLES
+   ============================================ */
+
+/* Header Scroll Effect */
+.header {
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Validation States */
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid {
+    border-color: #38a169;
+    background-color: #f0fff4;
+}
+
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+    border-color: #e53e3e;
+    background-color: #fff5f5;
+}
+
+.form-group input.invalid:focus,
+.form-group select.invalid:focus,
+.form-group textarea.invalid:focus {
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+}
+
+/* Submit Button Sending State */
+.quote-form-container .btn.sending {
+    background: #718096;
+    cursor: wait;
+}
+
+/* FAQ Accordion */
+.faq-item.collapsed p {
+    display: none;
+}
+
+.faq-item h3 {
+    transition: color 0.3s ease;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item h3::after {
+    content: '−';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #3182ce;
+    font-weight: 300;
+}
+
+.faq-item.collapsed h3::after {
+    content: '+';
+}
+
+.faq-item h3:hover {
+    color: #3182ce;
+}
+
+/* Scroll to Top Button Hover */
+.scroll-to-top:hover {
+    background: #3182ce !important;
+    transform: scale(1.1);
+}
+
+/* Skip Link Focus Style */
+.skip-link:focus {
+    outline: 3px solid #e53e3e;
+    outline-offset: 2px;
+}
+
+/* Smooth Scroll Behavior (CSS fallback) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Testimonial Dots (mobile carousel) */
+.testimonial-dots span:hover {
+    opacity: 0.8;
+}
+
+/* Loading Animation for Images */
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+.gallery-placeholder {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .scroll-to-top,
+    .skip-link,
+    .cta-section,
+    .quote-form {
+        display: none;
+    }
+    
+    .hero {
+        margin-top: 0;
+        padding: 2rem 0;
+        background: #1a365d !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+}
