@@ -7,6 +7,28 @@
     'use strict';
 
     // ============================================
+    // MOBILE NAVIGATION TOGGLE
+    // ============================================
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            // Toggle button icon
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            });
+        });
+    }
+
+    // ============================================
     // SMOOTH SCROLLING FOR ANCHOR LINKS
     // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
