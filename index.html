@@ -176,13 +176,16 @@
     </script>
 </head>
 <body>
-    <header class="header">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
         <nav class="nav">
             <div class="nav-brand">
                 <h1>Toolbox & Safe</h1>
                 <span class="tagline">Arizona Moving Specialists</span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -192,11 +195,11 @@
                 <a href="#quote" class="quote-btn">Get Quote</a>
                 <a href="tel:+16029354209" class="phone-btn">📞 (602) 935-4209</a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section class="hero">
             <div class="container">
                 <h2 class="hero-title">Hey, I'm Ryan. I Move Toolboxes & Gun Safes.</h2>
@@ -404,10 +407,9 @@
                     </a>
                 </div>
                 <div class="instagram-follow">
-                    <a href="https://www.instagram.com/curlmoving/" target="_blank" class="btn btn-secondary">
+                    <a href="https://www.instagram.com/curlmoving/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                         📷 Follow @curlmoving for more
                     </a>
-                </div>
                 </div>
             </div>
         </section>
@@ -579,7 +581,7 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>Phone: <a href="tel:+16029354209">(602) 935-4209</a></p>
-                    <p>Part of the <a href="https://curlmoving.com" target="_blank">Curl Moving</a> family</p>
+                    <p>Part of the <a href="https://curlmoving.com" target="_blank" rel="noopener noreferrer">Curl Moving</a> family</p>
                 </div>
             </div>
             <div class="footer-bottom">

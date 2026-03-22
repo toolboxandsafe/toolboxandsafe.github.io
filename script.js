@@ -14,9 +14,10 @@
     
     if (mobileMenuBtn && navLinks) {
         mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            // Toggle button icon
-            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            const isExpanded = navLinks.classList.toggle('active');
+            // Toggle button icon and aria-expanded
+            this.textContent = isExpanded ? '✕' : '☰';
+            this.setAttribute('aria-expanded', isExpanded);
         });
         
         // Close menu when clicking a link
@@ -24,6 +25,7 @@
             link.addEventListener('click', function() {
                 navLinks.classList.remove('active');
                 mobileMenuBtn.textContent = '☰';
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
     }
