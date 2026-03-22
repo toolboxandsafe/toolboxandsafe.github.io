@@ -1403,3 +1403,172 @@ textarea:focus {
         margin-bottom: 0.5rem;
     }
 }
+
+/* ============================================
+   City Landing Pages
+   ============================================ */
+
+.city-hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.city-hero .hero-title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.city-hero .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.city-content {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.content-text h3 {
+    color: #1e3a5f;
+    margin: 2rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.content-text h3:first-child {
+    margin-top: 0;
+}
+
+.content-text p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.area-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.area-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+.area-list li strong {
+    color: #1e3a5f;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    padding: 0.75rem 0;
+    color: #4a5568;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.content-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.quick-quote-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quick-quote-box h3 {
+    color: #1e3a5f;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.quick-quote-box p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.quick-quote-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.quick-quote-box li {
+    padding: 0.5rem 0;
+    color: #4a5568;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.quick-quote-box li strong {
+    color: #1e3a5f;
+    font-size: 1.2rem;
+}
+
+.quick-quote-box .small {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 1.5rem;
+}
+
+.quick-quote-box .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.city-faq {
+    padding: 4rem 0;
+    background: white;
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-sidebar {
+        position: static;
+    }
+    
+    .city-hero .hero-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .city-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .city-hero .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .city-hero .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .content-text h3 {
+        font-size: 1.2rem;
+    }
+}
