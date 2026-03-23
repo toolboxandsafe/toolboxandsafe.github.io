@@ -1572,3 +1572,151 @@ textarea:focus {
         font-size: 1.2rem;
     }
 }
+
+/* Stats Section */
+.stats-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #1a365d 0%, #2d4a7c 100%);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 1rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    color: #f6e05e;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+
+/* Service Area Section */
+.service-area {
+    padding: 5rem 0;
+    background: #f7fafc;
+}
+
+.service-area-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.service-area-map {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-area-map iframe {
+    display: block;
+}
+
+.service-area-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-area-info h3 {
+    font-size: 1.3rem;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.service-area-info h3:first-child {
+    margin-top: 0;
+}
+
+.service-area-info > p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.area-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.area-list li {
+    padding: 0.4rem 0;
+    color: #555;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.area-list li:last-child {
+    border-bottom: none;
+}
+
+.primary-areas li:before {
+    content: "✓ ";
+    color: #38a169;
+    font-weight: bold;
+}
+
+.extended-areas li:before {
+    content: "→ ";
+    color: #3182ce;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .service-area-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-area-map {
+        order: 2;
+    }
+    
+    .service-area-info {
+        order: 1;
+    }
+}
