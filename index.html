@@ -582,7 +582,22 @@
                         <label for="additional_info">Additional Information</label>
                         <textarea id="additional_info" name="additional_info" rows="4" placeholder="Any special requirements, narrow doorways, tight turns, bolt-down needed, etc."></textarea>
                     </div>
+                    <div class="form-group full-width">
+                        <label for="how_found">How did you find us?</label>
+                        <select id="how_found" name="how_found">
+                            <option value="">Select...</option>
+                            <option value="google_search">Google Search</option>
+                            <option value="google_ads">Google Ad</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="yelp">Yelp</option>
+                            <option value="referral">Friend/Referral</option>
+                            <option value="repeat">Used you before</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                     <input type="hidden" name="_subject" value="New Quote Request from toolboxandsafe.com">
+                    <input type="hidden" name="_next" value="https://toolboxandsafe.com/thanks.html">
                     <button type="submit" class="btn btn-primary btn-large">Submit Quote Request</button>
                     <p class="form-note">I typically respond within a few hours</p>
                 </form>
