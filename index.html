@@ -3,933 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arizona Toolbox & Gun Safe Moving Specialists | Professional Heavy Item Movers</title>
-    <meta name="description" content="I'm Ryan - I move toolboxes and gun safes in Arizona. Family-owned, fully insured, and I've been doing this since 2020. Phoenix, Scottsdale, Mesa, Gilbert.">
+    <title>Gun Safe & Toolbox Moving in Arizona | Ryan - (602) 935-4209</title>
+    <meta name="description" content="I'm Ryan - I move gun safes, toolboxes, vending machines and ATMs in Arizona. Text me for a fast quote. Gilbert, Mesa, Phoenix, Scottsdale.">
     
-    <!-- SEO Meta Tags -->
-    <meta name="keywords" content="gun safe moving, toolbox moving, safe movers Arizona, heavy item movers Phoenix, Snap-on toolbox moving, safe moving Scottsdale, Mesa safe movers, Gilbert toolbox moving, professional safe movers">
+    <meta name="keywords" content="gun safe moving, toolbox moving, safe movers Arizona, vending machine moving Phoenix">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Toolbox & Safe Moving">
     <link rel="canonical" href="https://toolboxandsafe.com/">
     
-    <!-- Geographic Meta Tags for Local SEO -->
     <meta name="geo.region" content="US-AZ">
-    <meta name="geo.placename" content="Phoenix">
-    <meta name="geo.position" content="33.4484;-112.0740">
-    <meta name="ICBM" content="33.4484, -112.0740">
+    <meta name="geo.placename" content="Gilbert">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://toolboxandsafe.com/">
-    <meta property="og:title" content="Arizona Toolbox & Gun Safe Moving Specialists">
-    <meta property="og:description" content="Professional toolbox and gun safe moving services in Phoenix, Scottsdale, Mesa, Gilbert, and all Arizona. Fully insured, experienced specialists.">
-    <meta property="og:image" content="https://toolboxandsafe.com/og-image.jpg">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Toolbox & Safe Moving">
+    <meta property="og:title" content="Gun Safe & Toolbox Moving in Arizona">
+    <meta property="og:description" content="Professional gun safe and toolbox moving. Text Ryan for a fast quote.">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arizona Toolbox & Gun Safe Moving Specialists">
-    <meta name="twitter:description" content="Professional toolbox and gun safe moving services in Phoenix metro. Fully insured specialists.">
-    <meta name="twitter:image" content="https://toolboxandsafe.com/og-image.jpg">
-    
-    <!-- Mobile & PWA -->
     <meta name="theme-color" content="#1e3a5f">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Toolbox & Safe">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        header { background: #1e3a5f; color: white; padding: 20px 0; text-align: center; }
+        header h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        header p { opacity: 0.9; }
+        
+        .cta-box { background: #f8f9fa; border: 2px solid #1e3a5f; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; }
+        .cta-box h2 { color: #1e3a5f; margin-bottom: 20px; font-size: 1.5rem; }
+        .cta-box .phone { font-size: 2rem; font-weight: bold; color: #1e3a5f; text-decoration: none; display: block; margin: 20px 0; }
+        .cta-box .phone:hover { color: #2c5282; }
+        
+        .quote-info { background: #e8f4f8; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: left; }
+        .quote-info h3 { margin-bottom: 15px; color: #1e3a5f; }
+        .quote-info ul { margin-left: 20px; }
+        .quote-info li { margin: 8px 0; }
+        
+        .btn { display: inline-block; background: #1e3a5f; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 10px 5px; }
+        .btn:hover { background: #2c5282; }
+        .btn-outline { background: white; color: #1e3a5f; border: 2px solid #1e3a5f; }
+        
+        section { padding: 40px 0; }
+        section h2 { text-align: center; margin-bottom: 30px; color: #1e3a5f; }
+        
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; text-align: center; }
+        .service h3 { color: #1e3a5f; margin: 15px 0 10px; }
+        .service-icon { font-size: 3rem; }
+        
+        .about { background: #f8f9fa; }
+        .about p { margin: 15px 0; }
+        
+        .areas { text-align: center; }
+        .areas ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+        .areas li { background: #1e3a5f; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; }
+        
+        footer { background: #1e3a5f; color: white; padding: 30px 0; text-align: center; }
+        footer a { color: white; }
+        
+        @media (max-width: 600px) {
+            .cta-box .phone { font-size: 1.5rem; }
+            header h1 { font-size: 1.4rem; }
+        }
+    </style>
     
-    <!-- Resource Hints for Performance -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preconnect" href="https://www.google.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.google.com">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- JSON-LD Structured Data for Local Business -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://toolboxandsafe.com/#business",
         "name": "Toolbox & Safe Moving",
-        "alternateName": "Arizona Toolbox & Gun Safe Moving Specialists",
-        "description": "Professional toolbox and gun safe moving services throughout Arizona. Specialists in heavy item moving including Snap-on toolboxes, gun safes any weight, and other heavy equipment.",
+        "description": "Professional gun safe, toolbox, and vending machine moving in Arizona.",
         "url": "https://toolboxandsafe.com",
         "telephone": "+1-602-935-4209",
-        "priceRange": "$$",
-        "image": "https://toolboxandsafe.com/og-image.jpg",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Phoenix",
+            "addressLocality": "Gilbert",
             "addressRegion": "AZ",
             "addressCountry": "US"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 33.4484,
-            "longitude": -112.0740
-        },
-        "areaServed": [
-            {"@type": "City", "name": "Phoenix", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Scottsdale", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Mesa", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Gilbert", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Chandler", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Tempe", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Glendale", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Peoria", "addressRegion": "AZ"},
-            {"@type": "City", "name": "Tucson", "addressRegion": "AZ"}
-        ],
-        "serviceType": ["Gun Safe Moving", "Toolbox Moving", "Pool Table Moving", "Piano Moving", "Vending Machine Moving", "ATM Moving", "Gym Equipment Moving", "Hot Tub Moving"],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Moving Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Toolbox Moving",
-                        "description": "Professional moving of tool chests and rolling toolboxes including Snap-on, Matco, and Mac Tools",
-                        "url": "https://toolboxandsafe.com/"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "200",
-                        "priceCurrency": "USD",
-                        "minPrice": "200"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Gun Safe Moving",
-                        "description": "Professional moving of gun safes any weight with specialized equipment",
-                        "url": "https://toolboxandsafe.com/gun-safe-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "250",
-                        "priceCurrency": "USD",
-                        "minPrice": "250"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Pool Table Moving",
-                        "description": "Expert pool table moving and relocation with professional disassembly and reassembly services",
-                        "url": "https://toolboxandsafe.com/pool-table-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "300",
-                        "priceCurrency": "USD",
-                        "minPrice": "300"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Piano Moving",
-                        "description": "Professional piano moving services for uprights, baby grands, and grand pianos",
-                        "url": "https://toolboxandsafe.com/piano-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "350",
-                        "priceCurrency": "USD",
-                        "minPrice": "350"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Vending Machine Moving",
-                        "description": "Commercial vending machine moving and relocation for snack, beverage, and combo machines",
-                        "url": "https://toolboxandsafe.com/vending-machine-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "200",
-                        "priceCurrency": "USD",
-                        "minPrice": "200"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "ATM Moving",
-                        "description": "Professional ATM machine moving and installation services for banks and businesses",
-                        "url": "https://toolboxandsafe.com/atm-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "200",
-                        "priceCurrency": "USD",
-                        "minPrice": "200"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Gym Equipment Moving",
-                        "description": "Heavy gym equipment moving including treadmills, weight machines, and commercial fitness equipment",
-                        "url": "https://toolboxandsafe.com/gym-equipment-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "200",
-                        "priceCurrency": "USD",
-                        "minPrice": "200"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Hot Tub Moving",
-                        "description": "Professional hot tub and spa moving with crane services available for difficult access",
-                        "url": "https://toolboxandsafe.com/hot-tub-moving.html"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": "300",
-                        "priceCurrency": "USD",
-                        "minPrice": "300"
-                    }
-                }
-            ]
-        },
-        "openingHours": "Mo-Sa 07:00-19:00",
-        "parentOrganization": {
-            "@type": "Organization",
-            "name": "Curl Moving",
-            "url": "https://curlmoving.com"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "6",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "sameAs": [
-            "https://www.instagram.com/curlmoving/"
-        ]
-    }
-    </script>
-    
-    <!-- FAQ Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How much does it cost to move a gun safe in Phoenix?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Gun safe moving in Phoenix starts at $250 for safes under 500 lbs with local moves under 25 miles. Safes 500+ lbs start at $400. Additional charges apply for bolt-down installation ($75) and long distance moves ($2/mile over 25 miles)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can you handle difficult access locations?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes! I handle challenging moves regularly using hydraulic heavy-duty dollies and proper lifting techniques. I survey the route beforehand to ensure safe passage regardless of tight turns or obstacles."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are you licensed and insured for safe moving?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, I'm fully licensed for commercial moving in Arizona and carry comprehensive insurance coverage for your property and our equipment. I'm part of the Curl Moving family of services with years of professional moving experience."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What areas do you serve for gun safe and toolbox moving?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "I serve all of Phoenix, Scottsdale, Mesa, Gilbert, Chandler, Tempe, Glendale, Peoria, and surrounding areas within 25 miles at base rates. I also service Tucson and other Arizona locations with distance charges for moves over 25 miles."
-                }
-            }
-        ]
-    }
-    </script>
-    
-    <!-- Individual Review Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Mike T."
-        },
-        "reviewBody": "Had a 1,200 lb Liberty safe that needed to go from the garage up to my second-floor office. Ryan came prepared with the right equipment and moved it without a single scratch. Worth every penny.",
-        "datePublished": "2025-11-15"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "James R."
-        },
-        "reviewBody": "I was worried about my $15k Snap-on box getting damaged during my shop relocation. He secured every drawer, padded everything, and delivered it in perfect condition. True professionals.",
-        "datePublished": "2025-10-22"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Sarah K."
-        },
-        "reviewBody": "Moved my grandfather's antique gun safe - it's been in the family for 60 years. He treated it like it was his own. Navigated a tight hallway I didn't think was possible. Highly recommend!",
-        "datePublished": "2025-09-08"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "David M."
-        },
-        "reviewBody": "Called on a Saturday morning, Ryan was at my house by noon. Fast, professional, and the price was exactly what he quoted. No surprises. This is how moving should be done.",
-        "datePublished": "2025-08-30"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Robert H."
-        },
-        "reviewBody": "Two 800 lb gun safes moved to the garage - had a 90-degree turn to navigate. He surveyed the route first and got both safes positioned safely. Amazing work!",
-        "datePublished": "2025-07-14"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "LocalBusiness",
-            "@id": "https://toolboxandsafe.com/#business"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Carlos V."
-        },
-        "reviewBody": "Finally found a company that specializes in this. Other movers wouldn't even quote my Matco toolbox. Ryan knew exactly what he was doing from the first call.",
-        "datePublished": "2025-06-20"
+        "areaServed": ["Phoenix", "Scottsdale", "Mesa", "Gilbert", "Chandler", "Tempe"]
     }
     </script>
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <header class="header" role="banner">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1>Toolbox & Safe</h1>
-                <span class="tagline">Arizona Moving Specialists</span>
-            </div>
-            <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#service-area">Areas</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <div class="nav-contact">
-                <a href="#quote" class="quote-btn">Get Quote</a>
-                <a href="tel:+16029354209" class="phone-btn">📞 (602) 935-4209</a>
-            </div>
-            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
-        </nav>
-    </header>
 
-    <main id="main-content" role="main">
-        <section class="hero">
-            <div class="container">
-                <h2 class="hero-title">Hey, I'm Ryan. I Move Toolboxes & Gun Safes.</h2>
-                <p class="hero-subtitle">Family-owned, Arizona-based. Since 2020 I've been moving only the heavy stuff. I bring all the equipment, show up on time, and get it done right.</p>
-                <div class="hero-buttons">
-                    <a href="tel:+16029354209" class="btn btn-primary">📱 Text or Call Me</a>
-                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
-                </div>
-            </div>
-        </section>
+<header>
+    <div class="container">
+        <h1>Gun Safe & Toolbox Moving</h1>
+        <p>I'm Ryan. I move the heavy stuff in Arizona.</p>
+    </div>
+</header>
 
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Moves Completed</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">No Weight Limit</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Fully Insured</span>
-                    </div>
-                </div>
+<main>
+    <div class="container">
+        
+        <div class="cta-box">
+            <h2>📱 Text or Call Ryan for a Fast Quote</h2>
+            <a href="tel:+16029354209" class="phone">(602) 935-4209</a>
+            
+            <div class="quote-info">
+                <h3>For a quick quote, send me:</h3>
+                <ul>
+                    <li><strong>Weight</strong> of the safe/toolbox (or a picture so I can estimate)</li>
+                    <li><strong>Pickup address</strong></li>
+                    <li><strong>Delivery address</strong></li>
+                    <li><strong>Garage to garage?</strong> Or inside the house?</li>
+                    <li><strong>Any obstacles?</strong> Tight turns, non-paved routes, etc.</li>
+                </ul>
             </div>
-        </section>
-
-        <section class="services" id="services">
-            <div class="container">
-                <h2 class="section-title">What I Move</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🧰</div>
-                        <h3>Toolbox Moving</h3>
-                        <p>I roll your box onto my drop deck trailer and strap it down. Pretty simple - I show up on time and get the work done fast and safely.</p>
-                        <ul>
-                            <li>Snap-on, Matco, Mac Tools - all of them</li>
-                            <li>Leave it loaded, just lock drawers</li>
-                            <li>Shop to shop or wherever you need</li>
-                            <li>Fully insured</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🔐</div>
-                        <h3>Gun Safe Moving</h3>
-                        <p>I understand safes need to be handled right. Safes under 900 lbs I move myself. Heavier ones I bring a helper.</p>
-                        <ul>
-                            <li>Up to any weight - I've got the equipment</li>
-                            <li>Tight turns, any location</li>
-                            <li>Floor protection always</li>
-                            <li>Fully licensed & insured</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="pricing" id="pricing">
-            <div class="container">
-                <h2 class="section-title">Transparent Pricing</h2>
-                <p class="section-subtitle">No surprises. Know what to expect before I arrive.</p>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>Toolbox Moving</h3>
-                        <div class="price">Starting at <span>$200</span></div>
-                        <ul>
-                            <li>Local moves (under 25 miles)</li>
-                            <li>Standard rolling toolbox (under 500 lbs)</li>
-                            <li>Ground floor to ground floor</li>
-                            <li>Drawer securing & padding</li>
-                            <li>Insurance included</li>
-                        </ul>
-                        <a href="tel:+16029354209" class="btn btn-secondary">Get Exact Quote</a>
-                    </div>
-                    <div class="pricing-card featured">
-                        <h3>Gun Safe Moving</h3>
-                        <div class="price">Starting at <span>$250</span></div>
-                        <ul>
-                            <li>Safes under 500 lbs</li>
-                            <li>Local moves (under 25 miles)</li>
-                            <li>Floor protection guaranteed</li>
-                            <li>Professional-grade equipment</li>
-                            <li>Route survey included</li>
-                        </ul>
-                        <a href="tel:+16029354209" class="btn btn-primary">Get Exact Quote</a>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>Heavy Safe Moving</h3>
-                        <div class="price">Starting at <span>$400</span></div>
-                        <ul>
-                            <li>Safes 500-any weight</li>
-                            <li>Hydraulic lifting equipment</li>
-                            <li>2-3 person specialized crew</li>
-                            <li>Custom route planning</li>
-                            <li>Enhanced insurance coverage</li>
-                        </ul>
-                        <a href="tel:+16029354209" class="btn btn-secondary">Get Exact Quote</a>
-                    </div>
-                </div>
-                <div class="pricing-extras">
-                    <h4>Additional Services & Factors That Affect Price</h4>
-                    <div class="extras-grid">
-                        <div class="extra">
-                            <span class="extra-name">Bolt-down Installation</span>
-                            <span class="extra-price">+$75</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Long Carry (50+ ft)</span>
-                            <span class="extra-price">+$50</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Narrow Doorways/Tight Turns</span>
-                            <span class="extra-price">+$50-$100</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Door/Railing Removal</span>
-                            <span class="extra-price">+$75-$125</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Distance (over 25 miles)</span>
-                            <span class="extra-price">$2/mile</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Tucson Area Moves</span>
-                            <span class="extra-price">Starting at $350</span>
-                        </div>
-                        <div class="extra">
-                            <span class="extra-name">Same-Day/Emergency</span>
-                            <span class="extra-price">+25%</span>
-                        </div>
-                    </div>
-                    <div class="pricing-note">
-                        <p><strong>Free Quote Process:</strong> I provide a detailed estimate after discussing your specific needs. Weight, dimensions, location challenges, and distance all factor into final pricing. Most quotes are provided within hours of your call.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq" id="faq">
-            <div class="container">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>Do I need to help with the move?</h3>
-                        <p>Nope! I just need access to both pick up and drop off locations and I handle the rest. I bring all the equipment needed.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>When do I pay?</h3>
-                        <p>You can pay after the service is complete. I accept Cash, Check, Venmo, Zelle, and Cash App.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can you do same-day pickup and delivery?</h3>
-                        <p>Generally yes, but sometimes I have moves in-between especially for longer distance moves. I finalize the schedule the day before so you know exactly what will happen on move day.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can you handle difficult access locations?</h3>
-                        <p>Yes! I handle challenging moves regularly. Just let me know about any tight turns, long carries, or obstacles when you reach out for a quote.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>What info do you need for a quote?</h3>
-                        <p>Text me the exact weight (or a picture so I can estimate), both addresses, and let me know if it's garage to garage or inside the house. Also mention any tight turns, non-paved routes, or obstacles.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Should I empty my toolbox before the move?</h3>
-                        <p>You can leave it loaded! Just lock the drawers and remove anything loose on the outside. If you have a top or side hutch, let me know if it's bolted - I'll run a strap around it either way.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>What areas do you service?</h3>
-                        <p>I'm based in Gilbert and service all of Phoenix, Scottsdale, Mesa, Chandler, Tempe, and surrounding areas. I can go outside Phoenix metro too - just ask.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can you bolt down my safe after moving it?</h3>
-                        <p>Yes! Bolt-down service is $75. I drill into concrete and secure it properly. Just let me know when you request a quote.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="why-us">
-            <div class="container">
-                <h2 class="section-title">Why Work With Me?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <h3>🎯 Specialists Only</h3>
-                        <p>I don't move furniture or boxes. Just toolboxes and gun safes. That's why I'm good at it.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>🛡️ Fully Insured</h3>
-                        <p>Your stuff is covered. I carry full insurance so you don't have to worry.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>📍 Based in Gilbert</h3>
-                        <p>I know the Phoenix area. Gilbert, Mesa, Chandler, Tempe, Scottsdale - I'm local.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>💪 Family Owned</h3>
-                        <p>No call centers, no random crews. Just a small family business doing honest work.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-area" id="service-area">
-            <div class="container">
-                <h2 class="section-title">Service Area Map</h2>
-                <p class="section-subtitle">Based in Gilbert, serving all of Phoenix metro and beyond</p>
-                <div class="service-area-content">
-                    <div class="service-area-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425345.3678478774!2d-112.40410028206053!3d33.60531828673707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7519ec3c0f99%3A0x85c51ff5bcb43f1f!2sPhoenix%20metropolitan%20area%2C%20AZ!5e0!3m2!1sen!2sus!4v1711180800000!5m2!1sen!2sus" 
-                            width="100%" 
-                            height="400" 
-                            style="border:0; border-radius: 12px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Service area map showing Phoenix metropolitan area">
-                        </iframe>
-                    </div>
-                    <div class="service-area-info">
-                        <h3>📍 Primary Service Area</h3>
-                        <p><strong>Base rate pricing</strong> (within 25 miles)</p>
-                        <ul class="area-list primary-areas">
-                            <li>Gilbert (Home Base)</li>
-                            <li>Mesa</li>
-                            <li>Chandler</li>
-                            <li>Phoenix</li>
-                            <li>Scottsdale</li>
-                            <li>Tempe</li>
-                        </ul>
-                        
-                        <h3>🚛 Extended Service Area</h3>
-                        <p><strong>+$2/mile</strong> beyond 25 miles</p>
-                        <ul class="area-list extended-areas">
-                            <li>Glendale & Peoria</li>
-                            <li>Surprise & Goodyear</li>
-                            <li>Queen Creek & San Tan</li>
-                            <li>Cave Creek & Fountain Hills</li>
-                            <li>Tucson (starting at $350)</li>
-                            <li>Flagstaff & Sedona (call for quote)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="process" id="process">
-            <div class="container">
-                <h2 class="section-title">How It Works</h2>
-                <p class="section-subtitle">Simple, straightforward process from quote to delivery</p>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Get a Quote</h3>
-                            <p>Text me at (602) 935-4209 with a photo of your item, both addresses, and any obstacles. I'll send you a firm quote within hours - usually minutes.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Schedule the Move</h3>
-                            <p>Pick a date that works for you. I'll confirm the day before with an arrival window. Most moves can be scheduled within a few days.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>I Handle Everything</h3>
-                            <p>I show up on time with all the equipment needed. Dollies, straps, floor protection, trailer - it's all on me. You just need to provide access.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Pay When Done</h3>
-                            <p>Once your item is safely in place, you pay. I accept Cash, Check, Venmo, Zelle, and Cash App. No payment until you're satisfied.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="gallery" id="gallery">
-            <div class="container">
-                <h2 class="section-title">Recent Jobs</h2>
-                <p class="section-subtitle">Check out some of my recent moves</p>
-                <div class="instagram-grid">
-                    <a href="https://www.instagram.com/curlmoving/" target="_blank" rel="noopener noreferrer" class="insta-item">
-                        <img src="images/safe-1.jpg" alt="Gun safe move" width="600" height="800" loading="lazy">
-                    </a>
-                    <a href="https://www.instagram.com/curlmoving/" target="_blank" rel="noopener noreferrer" class="insta-item">
-                        <img src="images/safe-2.jpg" alt="Heavy equipment transport" width="600" height="800" loading="lazy">
-                    </a>
-                    <a href="https://www.instagram.com/curlmoving/" target="_blank" rel="noopener noreferrer" class="insta-item">
-                        <img src="images/safe-3.jpg" alt="Professional moving equipment" width="800" height="600" loading="lazy">
-                    </a>
-                </div>
-                <div class="instagram-follow">
-                    <a href="https://www.instagram.com/curlmoving/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        📷 Follow @curlmoving for more
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials" id="testimonials">
-            <div class="container">
-                <h2 class="section-title">What People Say</h2>
-                <p class="section-subtitle">Reviews from folks I've helped</p>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Had a 1,200 lb Liberty safe that needed to go from the garage up to my second-floor office. Ryan came prepared with the right equipment and moved it without a single scratch. Worth every penny."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Mike T.</span>
-                            <span class="author-location">Gilbert, AZ</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"I was worried about my $15k Snap-on box getting damaged during my shop relocation. He secured every drawer, padded everything, and delivered it in perfect condition. True professionals."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">James R.</span>
-                            <span class="author-location">Mesa, AZ</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Moved my grandfather's antique gun safe - it's been in the family for 60 years. He treated it like it was his own. Navigated a tight hallway I didn't think was possible. Highly recommend!"</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Sarah K.</span>
-                            <span class="author-location">Scottsdale, AZ</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Called on a Saturday morning, Ryan was at my house by noon. Fast, professional, and the price was exactly what he quoted. No surprises. This is how moving should be done."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">David M.</span>
-                            <span class="author-location">Chandler, AZ</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Two 800 lb gun safes moved to the garage - had a 90-degree turn to navigate. He surveyed the route first and got both safes positioned safely. Amazing work!"</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Robert H.</span>
-                            <span class="author-location">Phoenix, AZ</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Finally found a company that specializes in this. Other movers wouldn't even quote my Matco toolbox. Ryan knew exactly what he was doing from the first call."</p>
-                        <div class="testimonial-author">
-                            <span class="author-name">Carlos V.</span>
-                            <span class="author-location">Tempe, AZ</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="quote-form" id="quote">
-            <div class="container">
-                <h2 class="section-title">Get a Quote</h2>
-                <p class="section-subtitle">Fill this out or just text me at (602) 935-4209</p>
-                <form action="https://formspree.io/f/xwpkqpvj" method="POST" class="quote-form-container">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(480) 555-1234">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="you@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="item_type">Type of Item *</label>
-                            <select id="item_type" name="item_type" required>
-                                <option value="">Select item type...</option>
-                                <option value="toolbox_small">Toolbox (under 300 lbs)</option>
-                                <option value="toolbox_large">Toolbox (300+ lbs)</option>
-                                <option value="safe_small">Gun Safe (under 500 lbs)</option>
-                                <option value="safe_medium">Gun Safe (500-1000 lbs)</option>
-                                <option value="safe_large">Gun Safe (1000+ lbs)</option>
-                                <option value="other">Other Heavy Item</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="weight">Approximate Weight (if known)</label>
-                            <input type="text" id="weight" name="weight" placeholder="e.g., 800 lbs or 'not sure'">
-                        </div>
-                        <div class="form-group">
-                            <label for="preferred_date">Preferred Move Date</label>
-                            <input type="date" id="preferred_date" name="preferred_date">
-                        </div>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="pickup_location">Pickup Location *</label>
-                        <input type="text" id="pickup_location" name="pickup_location" required placeholder="Street address, city, ZIP">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="delivery_location">Delivery Location *</label>
-                        <input type="text" id="delivery_location" name="delivery_location" required placeholder="Street address, city, ZIP">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="additional_info">Additional Information</label>
-                        <textarea id="additional_info" name="additional_info" rows="4" placeholder="Any special requirements, narrow doorways, tight turns, bolt-down needed, etc."></textarea>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="how_found">How did you find us?</label>
-                        <select id="how_found" name="how_found">
-                            <option value="">Select...</option>
-                            <option value="google_search">Google Search</option>
-                            <option value="google_ads">Google Ad</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="facebook">Facebook</option>
-                            <option value="yelp">Yelp</option>
-                            <option value="referral">Friend/Referral</option>
-                            <option value="repeat">Used you before</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <input type="hidden" name="_subject" value="New Quote Request from toolboxandsafe.com">
-                    <input type="hidden" name="_cc" value="grantworks2026@gmail.com">
-                    <input type="hidden" name="_next" value="https://toolboxandsafe.com/thanks.html">
-                    <button type="submit" class="btn btn-primary btn-large">Submit Quote Request</button>
-                    <p class="form-note">I typically respond within a few hours</p>
-                </form>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-                <h2>Rather Just Call or Text?</h2>
-                <p>Reach out directly - text is best but I try to answer calls when I can</p>
-                <a href="tel:+16029354209" class="btn btn-primary btn-large">Call (602) 935-4209 Now</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Toolbox & Safe Moving</h3>
-                    <p>Family-owned Arizona business. I'm Ryan - I move toolboxes and gun safes. That's it.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="/gun-safe-moving.html">Gun Safe Moving</a></li>
-                        <li><a href="/#services">Toolbox Moving</a></li>
-                        <li><a href="/atm-moving.html">ATM Moving</a></li>
-                        <li><a href="/vending-machine-moving.html">Vending Machine Moving</a></li>
-                        <li><a href="/gym-equipment-moving.html">Gym Equipment Moving</a></li>
-                        <li><a href="/pool-table-moving.html">Pool Table Moving</a></li>
-                        <li><a href="/piano-moving.html">Piano Moving</a></li>
-                        <li><a href="/hot-tub-moving.html">Hot Tub Moving</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Service Areas</h3>
-                    <ul>
-                        <li><a href="/phoenix-safe-moving.html">Phoenix</a></li>
-                        <li><a href="/scottsdale-safe-moving.html">Scottsdale</a></li>
-                        <li><a href="/mesa-safe-moving.html">Mesa</a></li>
-                        <li><a href="/gilbert-safe-moving.html">Gilbert</a></li>
-                        <li><a href="/tempe-safe-moving.html">Tempe</a></li>
-                        <li><a href="/chandler-safe-moving.html">Chandler</a></li>
-                        <li>Tucson</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Phone: <a href="tel:+16029354209">(602) 935-4209</a></p>
-                    <p>Part of the <a href="https://curlmoving.com" target="_blank" rel="noopener noreferrer">Curl Moving</a> family</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Toolbox & Safe Moving. Licensed & Insured in Arizona.</p>
-            </div>
+            
+            <a href="sms:+16029354209?body=Hi%20Ryan,%20I%20need%20a%20quote%20for%20moving%20my%20" class="btn">📱 Text Ryan Now</a>
+            <a href="tel:+16029354209" class="btn btn-outline">📞 Call Ryan</a>
         </div>
-    </footer>
-    
-    <!-- Site Enhancements: Smooth scroll, form validation, UX improvements -->
-    <script src="script.js"></script>
+
+        <section>
+            <h2>What I Move</h2>
+            <div class="services">
+                <div class="service">
+                    <div class="service-icon">🔐</div>
+                    <h3>Gun Safes</h3>
+                    <p>Any size, any weight. Liberty, Browning, Fort Knox - I've moved them all.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">🧰</div>
+                    <h3>Toolboxes</h3>
+                    <p>Snap-on, Matco, Mac Tools. Leave it loaded - just lock the drawers.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">🥤</div>
+                    <h3>Vending Machines</h3>
+                    <p>Snack, beverage, combo units. Commercial moves for businesses.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">🏧</div>
+                    <h3>ATMs</h3>
+                    <p>Banks, credit unions, retail locations. Professional ATM relocation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm Ryan. I've been moving gun safes, toolboxes, and heavy equipment in Arizona since 2020. I'm a single owner-operator with the right equipment to handle the job safely.</p>
+            <p><strong>Safes under 900 lbs:</strong> I move by myself.</p>
+            <p><strong>Safes 900+ lbs:</strong> I bring a helper.</p>
+            <p>I'm fully insured and I show up on time. Text me with your info and I'll get you a quote fast.</p>
+        </section>
+
+        <section class="areas">
+            <h2>Service Areas</h2>
+            <p>Based in Gilbert. I service all of Phoenix metro and can go statewide.</p>
+            <ul>
+                <li>Gilbert</li>
+                <li>Mesa</li>
+                <li>Chandler</li>
+                <li>Tempe</li>
+                <li>Phoenix</li>
+                <li>Scottsdale</li>
+                <li>Glendale</li>
+                <li>Peoria</li>
+                <li>Tucson</li>
+            </ul>
+        </section>
+
+        <div class="cta-box">
+            <h2>Ready for a Quote?</h2>
+            <p>Text me the weight, addresses, and any obstacles. I'll get back to you fast.</p>
+            <a href="sms:+16029354209?body=Hi%20Ryan,%20I%20need%20a%20quote%20for%20moving%20my%20" class="btn">📱 Text (602) 935-4209</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p><strong>Toolbox & Safe Moving</strong></p>
+        <p>📱 <a href="tel:+16029354209">(602) 935-4209</a></p>
+        <p>Gilbert, Arizona | Serving all of Phoenix Metro</p>
+        <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">© 2026 Toolbox & Safe Moving. Part of the Curl Moving family.</p>
+    </div>
+</footer>
+
 </body>
 </html>
