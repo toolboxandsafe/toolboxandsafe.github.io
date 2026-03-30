@@ -17,6 +17,7 @@
     <meta property="og:url" content="https://toolboxandsafe.com/">
     <meta property="og:title" content="Gun Safe & Toolbox Moving in Arizona">
     <meta property="og:description" content="Professional gun safe and toolbox moving. Text Ryan for a fast quote.">
+    <meta property="og:image" content="https://toolboxandsafe.com/images/safe-3.jpg">
     
     <meta name="theme-color" content="#1e3a5f">
     
@@ -28,6 +29,8 @@
         header { background: #1e3a5f; color: white; padding: 20px 0; text-align: center; }
         header h1 { font-size: 1.8rem; margin-bottom: 10px; }
         header p { opacity: 0.9; }
+        
+        .hero-image { width: 100%; max-height: 400px; object-fit: cover; display: block; }
         
         .cta-box { background: #f8f9fa; border: 2px solid #1e3a5f; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; }
         .cta-box h2 { color: #1e3a5f; margin-bottom: 20px; font-size: 1.5rem; }
@@ -47,16 +50,22 @@
         section h2 { text-align: center; margin-bottom: 30px; color: #1e3a5f; }
         
         .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .service { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; text-align: center; }
+        .service { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 25px; text-align: center; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; display: block; }
+        .service:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .service h3 { color: #1e3a5f; margin: 15px 0 10px; }
         .service-icon { font-size: 3rem; }
         
-        .about { background: #f8f9fa; }
+        .work-photos { background: #f8f9fa; padding: 40px 0; }
+        .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 20px; }
+        .photo-grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+        
+        .about { background: white; }
         .about p { margin: 15px 0; }
         
         .areas { text-align: center; }
         .areas ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
-        .areas li { background: #1e3a5f; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; }
+        .areas li a { background: #1e3a5f; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; text-decoration: none; display: block; }
+        .areas li a:hover { background: #2c5282; }
         
         footer { background: #1e3a5f; color: white; padding: 30px 0; text-align: center; }
         footer a { color: white; }
@@ -64,6 +73,8 @@
         @media (max-width: 600px) {
             .cta-box .phone { font-size: 1.5rem; }
             header h1 { font-size: 1.4rem; }
+            .photo-grid { grid-template-columns: 1fr; }
+            .photo-grid img { height: 200px; }
         }
     </style>
     
@@ -75,6 +86,7 @@
         "description": "Professional gun safe, toolbox, and vending machine moving in Arizona.",
         "url": "https://toolboxandsafe.com",
         "telephone": "+1-602-935-4209",
+        "image": "https://toolboxandsafe.com/images/safe-3.jpg",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Gilbert",
@@ -93,6 +105,8 @@
         <p>I'm Ryan. I move the heavy stuff in Arizona.</p>
     </div>
 </header>
+
+<img src="/images/safe-3.jpg" alt="Multiple gun safes loaded on heavy-duty trailer ready for transport" class="hero-image">
 
 <main>
     <div class="container">
@@ -119,29 +133,41 @@
         <section>
             <h2>What I Move</h2>
             <div class="services">
-                <div class="service">
+                <a href="/gun-safe-moving.html" class="service">
                     <div class="service-icon">🔐</div>
                     <h3>Gun Safes</h3>
                     <p>Any size. Liberty, Browning, Fort Knox - I've moved them all.</p>
-                </div>
-                <div class="service">
+                </a>
+                <a href="/toolbox-moving.html" class="service">
                     <div class="service-icon">🧰</div>
                     <h3>Toolboxes</h3>
                     <p>Snap-on, Matco, Mac Tools. Leave it loaded - just lock the drawers.</p>
-                </div>
-                <div class="service">
+                </a>
+                <a href="/vending-machine-moving.html" class="service">
                     <div class="service-icon">🥤</div>
                     <h3>Vending Machines</h3>
                     <p>Snack, beverage, combo units. Commercial moves for businesses.</p>
-                </div>
-                <div class="service">
+                </a>
+                <a href="/atm-moving.html" class="service">
                     <div class="service-icon">🏧</div>
                     <h3>ATMs</h3>
                     <p>Banks, credit unions, retail locations. Professional ATM relocation.</p>
-                </div>
+                </a>
             </div>
         </section>
+    </div>
 
+    <section class="work-photos">
+        <div class="container">
+            <h2>Real Work, Real Equipment</h2>
+            <div class="photo-grid">
+                <img src="/images/safe-2.jpg" alt="Superior Safe Company gun safe with door open showing heavy-duty locking bolts">
+                <img src="/images/safe-3.jpg" alt="Heavy-duty trailer loaded with multiple gun safes for transport">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
         <section class="about">
             <h2>About Me</h2>
             <p>I'm Ryan. I've been moving gun safes, toolboxes, and heavy equipment in Arizona since 2020. I'm a single owner-operator with the right equipment to handle the job safely.</p>
@@ -154,12 +180,12 @@
             <h2>Service Areas</h2>
             <p>Based in Gilbert. I service all of Phoenix metro and can go statewide.</p>
             <ul>
-                <li>Gilbert</li>
-                <li>Mesa</li>
-                <li>Chandler</li>
-                <li>Tempe</li>
-                <li>Phoenix</li>
-                <li>Scottsdale</li>
+                <li><a href="/gilbert-safe-moving.html">Gilbert</a></li>
+                <li><a href="/mesa-safe-moving.html">Mesa</a></li>
+                <li><a href="/chandler-safe-moving.html">Chandler</a></li>
+                <li><a href="/tempe-safe-moving.html">Tempe</a></li>
+                <li><a href="/phoenix-safe-moving.html">Phoenix</a></li>
+                <li><a href="/scottsdale-safe-moving.html">Scottsdale</a></li>
                 <li>Glendale</li>
                 <li>Peoria</li>
                 <li>Tucson</li>
@@ -180,7 +206,7 @@
         <p><strong>Toolbox & Safe Moving</strong></p>
         <p>📱 <a href="tel:+16029354209">(602) 935-4209</a></p>
         <p>Gilbert, Arizona | Serving all of Phoenix Metro</p>
-        <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">© 2026 Toolbox & Safe Moving. Part of the Curl Moving family.</p>
+        <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">© 2026 Toolbox & Safe Moving</p>
     </div>
 </footer>
 
